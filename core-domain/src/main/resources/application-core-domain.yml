@@ -1,12 +1,3 @@
 spring:
-  config:
-    activate:
-      on-profile: local
-    import: classpath:application-core-domain-datasource.yml
-  jpa:
-    hibernate:
-      ddl-auto: none
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
+  profiles:
+    active: local # 기본적으로 활성화할 profile을 local로 설정
